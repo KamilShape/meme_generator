@@ -31,17 +31,19 @@ body {
     max-width: 600px;
     margin: 30px auto;
     padding-bottom: 20px;
-    /* background-color: red; */
 }
 
 .form_inputs {
     display: flex;
-    justify-content: space-evenly;
+    width: 560px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .form_input {
     padding: 10px;
     width: 45%;
+    min-width: 270px;
     border-radius: 7px;
     border: 1px solid rgba(213, 212, 216, 255)
 }
@@ -66,17 +68,34 @@ body {
 
 .form_picture_box {
     position: relative;
-    background-color: blue;
-    width: 100%;
-    max-width: 560px;
     margin: 20px auto;
-    /* overflow: hidden; */
+    min-width: 560px;
 }
 
 .form_picture {
-    width: 560px;
+    max-width: 100%;
+    border-radius: 3px;
     display: block;
-    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.form_text {
+    width: 100%;
     position: absolute;
-    border-radius: 10px;
+    transform: translateX(-50%);
+    z-index: 3;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    left: 50%;
+    color: white;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.form_text-top {
+    top: 0;
+}
+
+.form_text-bottom {
+    bottom: 3%;
 }
